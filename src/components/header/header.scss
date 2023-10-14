@@ -1,0 +1,63 @@
+$color_1: dimgray;
+$color_2: red;
+.header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    &Left, &Right {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    a > span {
+        margin: 0 30px;
+        font-size: 1.3rem;
+        cursor: pointer;
+        text-decoration: none;
+
+
+
+        &:hover {
+            color: rgb(0, 255, 255);
+        }
+    }
+
+    &_icon {
+        width: 80px;
+        cursor: pointer;
+    }
+
+}
+.logo {
+    margin: 0 2rem;
+font-size: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+
+.input {
+    background-color: #212121;
+    max-width: 300px;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    &:focus {
+        color: white;
+        background-color: #212121;
+        outline-color:  rgb(0, 255, 255);
+        box-shadow: -3px -3px 15px rgb(0, 255, 255);
+        transition: .1s;
+        transition-property: box-shadow;
+    }
+}
+
+

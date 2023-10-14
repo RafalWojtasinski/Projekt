@@ -1,0 +1,17 @@
+.search_input {
+
+  background-color: #212121;
+  width: 800px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  &:focus {
+    color: white;
+    background-color: #212121;
+    outline-color:  rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+}
