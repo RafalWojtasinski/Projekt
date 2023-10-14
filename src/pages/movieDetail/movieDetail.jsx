@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import { useParams } from "react-router-dom"
 import "./movie_detail.scss"
-const MovieDetail = () => {
+const MovieDetail = ({addToFavourite}) => {
     const [currentMovieDetail, setMovie] = useState()
     const { id } = useParams()
 
@@ -50,6 +50,9 @@ const MovieDetail = () => {
                         </div>
                     </div>
                     <div className="movie_detailRightBottom">
+                        <button onClick={() => addToFavourite(currentMovieDetail)}>
+                            Dodaj do ulubionych
+                        </button>
                         <div className="synopsisText">Opis (Ang.)</div>
                         <div>{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
                     </div>

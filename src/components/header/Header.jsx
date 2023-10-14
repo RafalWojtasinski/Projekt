@@ -12,7 +12,7 @@ const Header = () => {
             <div className="headerLeft">
                 <Link to="/"><img className="header_icon" src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/647d2daa-a2e6-459c-5d07-6cf8d8362700/preview" /></Link>
                 <h2 className="logo">Super Filmy</h2>
-                <Link to="/movies/ulubione" style={{textDecoration:"none"}}><span>Ulubione</span></Link>
+                <Link to="/movies/favourite" style={{textDecoration:"none"}}><span>Ulubione</span></Link>
                 <Link to="/movies/do obejrzenia" style={{textDecoration: "none"}}><span>Do obejrzenia</span></Link>
                 <Link to="/movies/obejrzane" style={{textDecoration: "none"}}><span>Obejrzane</span></Link>
                 <label className="switch">

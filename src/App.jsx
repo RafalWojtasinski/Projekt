@@ -5,6 +5,7 @@ import Header from './components/header/Header.jsx';
 import Home from "./pages/home/home.jsx";
 import MovieDetail from "./pages/movieDetail/movieDetail.jsx";
 import {ThemeContext} from "./components/darkmode/theme.jsx";
+import FavoritesPage from "./pages/Favourite/Favourite.jsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Routes>
                 <Route index element={<Home />}></Route>
                 <Route path="movie/:id" element={<MovieDetail />}></Route>
+                <Route path="favourite/:id" element={<FavoritesPage />}></Route>
                 <Route path="/*" element={<h1>error page</h1>}></Route>
             </Routes>
         </Router>
